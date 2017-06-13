@@ -1,0 +1,674 @@
+@charset "UTF-8";
+
+/* Reseting
+=========================================================== */
+
+
+/* common settings reset */
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+tbody,
+tfoot,
+thead,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+img {
+    vertical-align: bottom;
+}
+
+a:link img {
+    text-decoration: none;
+    border: none 0px;
+}
+
+a:visited img {
+    text-decoration: none;
+    border: none 0px;
+}
+
+.none_adjust {
+    -webkit-text-size-adjust: 100%;
+}
+
+a:link img {
+    text-decoration: none;
+    border: none 0px;
+}
+
+a:visited img {
+    text-decoration: none;
+    border: none 0px;
+}
+
+
+/* ===========================================================
+start css settings
+=========================================================== */
+
+body {
+    min-width: 320px;
+    font-size: 14px;
+    line-height: 170%;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', sans-serif !important;
+    font-weight: normal;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #e60019;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e60019;
+}
+
+
+/* ===========================================================
+Layout
+=========================================================== */
+
+#wrapper {
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    zoom: 1;
+}
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#intro {
+    background-size: cover;
+    padding: 50px 0;
+    text-align: left;
+    color: #fff;
+}
+
+.introCt h2 {
+    margin-bottom: 18px;
+    font-size: 32px;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.introCt p {
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+
+/* ===========================================================
+footer
+=========================================================== */
+
+.footerWrap {
+    width: 100%;
+    background-color: #000050;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.footerTel {
+    margin-bottom: 28px;
+}
+
+.footerLogo {
+    margin-bottom: 20px;
+}
+
+.footerText {
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.footerCopyright {
+    margin-bottom: 35px;
+    font-size: 11px;
+}
+
+
+/* ===========================================================
+pageTop
+=========================================================== */
+
+#scrollUp {
+    bottom: 40px;
+    right: 5.5685%;
+    height: 27px;
+    /* Height of image */
+    width: 27px;
+    /* Width of image */
+    background: url(../img/page_top.png) no-repeat;
+    background-size: 100%;
+    z-index: 9998!important;
+}
+
+#scrollUp:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    -ms-filter: "alpha( opacity=70 )";
+}
+
+
+/* ===========================================================
+start PC css settings
+=========================================================== */
+
+@media screen and (min-width: 641px) {
+    /* ===========================================================
+    layout
+    =========================================================== */
+    body {
+        min-width: 1200px;
+    }
+    body p {
+        line-height: 2.0;
+    }
+    /* ===========================================================
+    header
+    =========================================================== */
+    #header {
+        width: 100%;
+        padding: 30px 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+    #header.noTop {
+        position: relative;
+        background-color: #42427C;
+    }
+    .headerIn {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: static;
+        background-color: transparent;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .headerLeft {
+        width: 310px;
+        float: left;
+        text-align: left;
+    }
+    .headerRight {
+        float: right;
+        width: 220px;
+        text-align: right;
+    }
+    .headerRight ul {
+        padding-top: 0;
+    }
+    /* ===========================================================
+    gNavi
+    =========================================================== */
+    .gNaviWrap {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #000050;
+        height: 60px;
+    }
+    .gNavi {
+        width: 960px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .gNaviBg {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    .gNavi ul {
+        margin: 0 auto;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 910px;
+    }
+    #noT ul {
+        width: 960px !important;
+    }
+    .gNavi li {
+        text-align: center;
+        cursor: pointer;
+        line-height: 60px;
+        position: relative;
+    }
+    .gNavi li a {
+        overflow: hidden;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .gNavi li a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        width: 0;
+        height: 3px;
+        background: #fff;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transition: width .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: width .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .gNavi a:hover:before {
+        width: 100%;
+    }
+    /* ===========================================================
+    gNaviChange
+    =========================================================== */
+    .gNaviWrapChange {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        background-color: #fff;
+        height: 60px;
+        position: relative;
+        display: none;
+    }
+    .gNaviChange {
+        margin: 0 auto;
+        position: relative;
+    }
+    .gNaviChange ul {
+        margin: 0 auto;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 960px;
+    }
+    .gNaviChange li {
+        text-align: center;
+        cursor: pointer;
+        position: relative;
+        line-height: 60px;
+    }
+    .gNaviChange li a {
+        overflow: hidden;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .gNaviChange li a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        width: 0;
+        height: 3px;
+        background: #fff;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transition: width .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: width .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    .gNaviChange a:hover:before {
+        width: 100%;
+    }
+    .gNaviChangeTop {
+        overflow: hidden;
+        padding: 30px 0;
+        background-color: #42427C;
+    }
+    .gNaviChangeTopIn {
+        width: 1200px;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .gNaviChangeBottom {
+        background-color: #000050;
+    }
+    .gNaviChangeBottomIn {
+        margin: 0 auto;
+        width: 960px;
+        position: relative;
+    }
+    .gNaviChangeBottomBg {
+        position: absolute;
+        left: 0;
+        bottom: 10px;
+    }
+    .logoChange {
+        float: left;
+    }
+    .logoChange {
+        padding: 0 20px 0 0;
+    }
+    .btnChange {
+        width: 220px;
+        overflow: hidden;
+        float: right;
+        text-align: right;
+        font-size: 15px;
+        padding-top: 0;
+    }
+    #change {
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 99999;
+        display: none;
+        top: 0;
+        background-color: #42427C;
+        height: auto;
+    }
+    /* ===========================================================
+    menuAreaBottom
+    =========================================================== */
+    #menuAreaBottom {
+        background-color: #ccccdb;
+    }
+    #menuAreaBottom ul.menuPc {
+        margin: 0 auto;
+        display: -webkit-flex;
+        -webkit-justify-content: space-between;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 960px;
+        height: 60px;
+    }
+    #menuAreaBottom li {
+        line-height: 60px;
+        position: relative;
+    }
+    #menuAreaBottom li a {
+        color: #000050;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    #menuAreaBottom li a:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 10px;
+        width: 0;
+        height: 3px;
+        background: #000050;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transition: width .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: width .3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    #menuAreaBottom a:hover:before {
+        width: 100%;
+    }
+}
+
+
+/* ===========================================================
+start SP css settings
+=========================================================== */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    header
+    =========================================================== */
+    #header {
+        position: fixed;
+        width: 100%;
+        z-index: 999999;
+        height: 80px;
+    }
+    .headerIn {
+        margin: 0 auto;
+        overflow: hidden;
+        position: absolute;
+        background-color: #000050;
+        width: 100%;
+        padding: 20px 10px;
+        box-sizing: border-box;
+        display: table;
+    }
+    .headerRight ul {
+        float: right;
+        overflow: hidden;
+        padding-top: 16%;
+    }
+    .headerBtnMenu .current {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/btn_menu_sp_on.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .headerBtnMenu .current img {
+        visibility: hidden;
+    }
+    .headerRight ul {
+        padding: 0;
+    }
+    .headerRight ul li.headerBtnMenu {
+        width: 100%;
+    }
+    .headerLeft {
+        display: table-cell;
+        vertical-align: middle;
+        width: 80%;
+        float: none;
+        text-align: left;
+    }
+    .headerLogo {
+        text-align: left;
+    }
+    .headerLogo img {
+        margin: 0;
+    }
+    .headerRight {
+        display: table-cell;
+        vertical-align: middle;
+        width: 20%;
+        float: none;
+    }
+    /* ===========================================================
+    gNavi
+    =========================================================== */
+    #gNaviWrapSP {
+        display: none;
+        min-width: 320px;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0!important;
+        left: 0;
+        z-index: 9999;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.8);
+        overflow-y: auto;
+        margin-top: 80px;
+    }
+    /* ===========================================================
+    gNaviList
+    =========================================================== */
+    .gNaviList {
+        text-align: center;
+        padding: 50px 0 100px;
+    }
+    .gNaviList img {
+        max-width: 100%;
+    }
+    .gNaviList li {
+        margin-bottom: 40px;
+    }
+    .gNaviList li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #intro {
+        margin-top: 80px;
+        padding: 65px 0;
+    }
+    /* ===========================================================
+    menuAreaBottom
+    =========================================================== */
+    #menuAreaBottom {
+        background: url(../../img/square.png) left top no-repeat;
+        padding: 30px 0 15px;
+    }
+    .menuAreaBottomTt {
+        text-align: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #000050;
+        margin-bottom: 25px;
+        font-weight: normal;
+        letter-spacing: 10px;
+    }
+    #menuAreaBottom ul {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #menuAreaBottom ul li {
+        width: 50%;
+        float: left;
+        padding-right: 5px;
+        padding-left: 5px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+    #menuAreaBottom ul li a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    #menuAreaBottom ul li:last-child {
+        width: 100%;
+    }
+    #menuAreaBottom ul li img {
+        width: 100%;
+    }
+    /* ===========================================================
+    footer
+    =========================================================== */
+    .footerText {
+        font-size: 12px;
+    }
+    .footer img {
+        max-width: 100%;
+    }
+}

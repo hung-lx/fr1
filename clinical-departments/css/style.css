@@ -1,0 +1,184 @@
+/* start PC css settings
+------------------------- */
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#intro {
+    background: url(../img/intro_bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ===========================================================
+content
+=========================================================== */
+
+#content {
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.listItem .Item {
+    width: 300px;
+    float: left;
+    margin-right: 30px;
+    background: #000050 url(../../common/img/arrow_bottom.png) 263px center no-repeat;
+    margin-bottom: 23px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.listItem .Item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.listItem .Item:nth-last-child(3),
+.listItem .Item:nth-last-child(2),
+.listItem .Item:last-child {
+    margin-bottom: 0;
+}
+
+.listItem .Item a {
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 3px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.ListCt {
+    margin-top: 60px;
+}
+
+.ListCt .ListCtItemImg {
+    float: left;
+    position: relative;
+}
+
+.ListCt .ListCtItem {
+    padding: 50px;
+    background-color: #E4E4EA;
+    margin-bottom: 50px;
+}
+
+.ListCt .ListCtItemText {
+    float: left;
+    width: 500px;
+    box-sizing: border-box;
+    padding-right: 50px;
+}
+
+.ListCt .ListCtItemText .Titl {
+    font-size: 32px;
+    color: #000050;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+.ListCt .ListCtItemImg {
+    float: left;
+    width: 360px;
+    position: relative;
+}
+
+.ListCt .ListCtItemImg img {
+    width: 100%;
+    display: block;
+}
+
+.ListCt .ListCtItemTab {
+    margin-top: 50px;
+    padding: 50px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table th {
+    text-align: center;
+    background-color: #000050;
+    color: #fff;
+    padding: 15px 10px;
+}
+
+table tr td:first-child {
+    text-align: center;
+    background-color: #E4E4EA;
+}
+
+table tr td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #CCCCD5;
+}
+
+
+/* start SP css settings
+------------------------- */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #intro {
+        background: url(../img/intro_bg_sp.jpg) center center no-repeat;
+    }
+    /* ===========================================================
+    content
+    =========================================================== */
+    #content {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .ListCt {
+        margin-top: 0;
+    }
+    .ListCt .ListCtItemText,
+    .ListCt .ListCtItemImg {
+        width: 100%;
+    }
+    .ListCt .ListCtItemText {
+        padding-right: 0;
+    }
+    .ListCt .ListCtItem {
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+    .ListCt .ListCtItemText .Titl {
+        padding: 22px 0;
+        margin-bottom: 0;
+        background: url(../../common/img/arrow_bottom.png) no-repeat;
+        background-position: right 0 center;
+        font-size: 16px;
+    }
+    .CtAccdionSp {
+        padding-bottom: 15px;
+        display: none;
+    }
+    .ListCt .ListCtItemTab {
+        margin-top: 15px;
+        padding: 15px;
+    }
+    .ListCt .ListCtItemImg {
+        margin-bottom: 15px;
+    }
+    table td {
+        padding: 6px;
+    }
+}
+
+@media screen and (min-width: 641px) {
+    .CtAccdionSp {
+        display: block !important;
+    }
+}

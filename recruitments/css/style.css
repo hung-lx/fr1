@@ -1,0 +1,83 @@
+/* start PC css settings
+------------------------- */
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#intro {
+    background: url(../img/intro_bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#content {
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.contentIn {
+    padding: 50px;
+    background-color: #E4E4EA;
+}
+
+.contentTab {
+    padding: 50px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+th {
+    text-align: center;
+    background-color: #000050;
+    color: #fff;
+    padding: 15px 10px;
+}
+
+table td:first-child {
+    text-align: center;
+    background-color: #E4E4EA;
+}
+
+table td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #CCCCD5;
+}
+
+
+/* start SP css settings
+------------------------- */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #intro {
+        background: url(../img/intro_bg_sp.jpg) center center no-repeat;
+    }
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #content {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .contentIn,
+    .contentTab {
+        padding: 15px;
+    }
+    table td {
+        padding: 6px;
+    }
+}

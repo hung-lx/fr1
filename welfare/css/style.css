@@ -1,0 +1,94 @@
+/* start PC css settings
+------------------------- */
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#intro {
+    background: url(../img/intro_bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#content {
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.ListPostsItem {
+    display: table;
+    border-bottom: 2px solid #000050;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.ListPostsItem .boxLeft {
+    width: 360px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+}
+
+.ListPostsItem .boxLeft > img {
+    width: 100% !important;
+}
+
+.ListPostsItem .boxRight {
+    width: 600px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ListPostsItem .boxRight .Titl {
+    font-size: 24px;
+    color: #000050;
+    margin-bottom: 24px;
+    letter-spacing: 3px;
+}
+
+
+/* start SP css settings
+------------------------- */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #intro {
+        background: url(../img/intro_bg_sp.jpg) center center no-repeat;
+    }
+    /* ===========================================================
+    content
+    =========================================================== */
+    #content {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .ListPostsItem .boxLeft,
+    .ListPostsItem .boxRight {
+        width: 100%;
+        display: block;
+    }
+    .ListPostsItem .boxRight {
+        padding-left: 0;
+    }
+    .ListPostsItem .boxRight .Titl {
+        margin-top: 32px;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+    .ListPostsItem {
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+}

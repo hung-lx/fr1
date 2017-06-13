@@ -1,0 +1,100 @@
+/* start PC css settings
+------------------------- */
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#intro {
+    background: url(../img/intro_bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#content {
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.contentIn {
+    padding: 50px;
+    background-color: #E4E4EA;
+}
+
+.contentTab {
+    padding: 50px;
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table td:first-child {
+    text-align: center;
+    color: #000050;
+}
+
+table tr:first-child td {
+    border-top: 1px solid #CCCCD5;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #CCCCD5;
+}
+
+table td input {
+    height: 30px;
+    width: 338px;
+}
+
+table td input:focus {
+    outline: none;
+}
+
+
+/* start SP css settings
+------------------------- */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #intro {
+        background: url(../img/intro_bg_sp.jpg) center center no-repeat;
+    }
+    /* ===========================================================
+    content
+    =========================================================== */
+    #content {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .contentIn,
+    .contentTab {
+        padding: 15px;
+    }
+    table td input {
+        width: 100%;
+    }
+    table td {
+        padding: 6px;
+        display: block;
+        text-align: left !important;
+    }
+    table tr > td:nth-child(1) {
+        border-bottom: none;
+    }
+    table tr > td:nth-child(2) {
+        border-top: none;
+    }
+}

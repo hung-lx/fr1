@@ -1,0 +1,174 @@
+/* start PC css settings
+------------------------- */
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#intro {
+    background: url(../img/intro_bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ===========================================================
+content01
+=========================================================== */
+
+#content01 {
+    text-align: left;
+    padding-top: 70px;
+}
+
+#content01 .box01 {
+    margin-bottom: 60px;
+}
+
+#content01 .box01 .box01Img {
+    float: left;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+#content01 .box01 .box01Ct h2 {
+    font-size: 24px;
+    margin-bottom: 44px;
+    line-height: 1.6;
+    color: #000050;
+    letter-spacing: 3px;
+}
+
+#content01 .box02 .box01Img {
+    margin-left: 60px;
+    margin-right: 0;
+}
+
+#content01 .box02 {
+    margin-bottom: 96px;
+}
+
+
+/* ===========================================================
+content02
+=========================================================== */
+
+#content02Ct {
+    padding: 32px 32px 48px;
+    background-color: #E4E4EA;
+    text-align: left;
+    margin-bottom: 120px;
+}
+
+#content02Ct .content02CtLe {
+    display: table-cell;
+    width: 140px;
+    vertical-align: top;
+}
+
+#content02Ct .content02CtRi {
+    display: table-cell;
+    width: 756px;
+    vertical-align: top;
+    padding-left: 57px;
+    box-sizing: border-box;
+}
+
+#content02Ct .content02CtRi h3 {
+    color: #000050;
+    font-size: 16px;
+    border-bottom: 3px solid #000050;
+    line-height: 1.6;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+
+#content02Ct .content02CtRi h3 .txt01 {
+    font-size: 16px;
+    color: #000;
+    font-weight: normal;
+}
+
+#content02Ct .content02CtRi h3 .txt02 {
+    font-size: 24px;
+    color: #000;
+    margin-right: 16px;
+}
+
+#content02Ct .content02CtRi .txt03 {
+    color: #000050;
+}
+
+
+/* start SP css settings
+------------------------- */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #intro {
+        background: url(../img/intro_bg_sp.jpg) center center no-repeat;
+    }
+    /* ===========================================================
+    content01
+    =========================================================== */
+    #content01 .box01Img {
+        margin: 0 0 21px !important;
+    }
+    #content01 {
+        padding-top: 19px;
+    }
+    #content01 .box01 .box01Ct h2 {
+        margin-bottom: 16px;
+        font-size: 14px;
+    }
+    #content01 .box01 > img {
+        width: 100%;
+    }
+    #content01 .box01 {
+        margin-bottom: 36px;
+    }
+    /* ===========================================================
+    content02
+    =========================================================== */
+    #content02Ct {
+        padding: 15px 10px;
+        margin-bottom: 50px;
+    }
+    #content02Ct .content02CtLe {
+        display: none;
+    }
+    #content02 .Titl {
+        margin-bottom: 14px;
+    }
+    #content02 .Titl >img {
+        float: left;
+        margin-right: 15px;
+    }
+    #content02Ct .content02CtRi {
+        padding-left: 0;
+    }
+    #content02Ct .content02CtRi h3 {
+        border: none;
+        padding-top: 14px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
+    #content02Ct .content02CtRi h3 .txt01 {
+        font-size: 14px;
+    }
+    #content02Ct .content02CtRi h3 .txt02 {
+        margin-right: 0;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #content02 .Titl >img {
+        margin-right: 10px;
+        max-width: 60%;
+    }
+}

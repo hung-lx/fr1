@@ -1,0 +1,119 @@
+/* start PC css settings
+------------------------- */
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#intro {
+    background: url(../img/intro_bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ===========================================================
+content
+=========================================================== */
+
+#content {
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.contentLi .item {
+    width: 50%;
+    float: left;
+    border: 2px solid #000050;
+    margin-right: 60px;
+    width: 450px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.contentLi .item:last-child,
+.contentLi .item:nth-last-child(2) {
+    margin-bottom: 0;
+}
+
+.contentLi .item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.contentLi .item .itemTil {
+    background-color: #000050;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px 10px 25px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+
+.contentLi .item .itemCt {
+    padding: 44px;
+}
+
+.contentLi .item .itemTil-big {
+    font-size: 60px;
+}
+
+.contentLi .item .itemCtImg > img {
+    width: 100% !important;
+    display: block !important;
+}
+
+.contentLi .item .itemCtImg {
+    margin-bottom: 33px;
+    position: relative;
+}
+
+.contentLi .itemCtTextImg {
+    color: #fff;
+    background-color: #FF0000;
+    padding: 10px;
+    font-size: 31px;
+    text-align: center;
+}
+
+
+/* start SP css settings
+------------------------- */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    content
+    =========================================================== */
+    #intro {
+        background: url(../img/intro_bg_sp.jpg) center center no-repeat;
+    }
+    /* ===========================================================
+    content
+    =========================================================== */
+    #content {
+        margin-top: 20px;
+        margin-bottom: 85px;
+    }
+    .contentLi .item {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    .contentLi .item .itemCt {
+        padding: 15px;
+    }
+    .contentLi .item .itemTil {
+        padding: 16px;
+    }
+    .contentLi .item .itemTil-big {
+        font-size: 40px;
+    }
+    .contentLi .item .itemTil {
+        font-size: 16px;
+    }
+    .contentLi .item .itemCtImg {
+        margin-bottom: 20px;
+    }
+}

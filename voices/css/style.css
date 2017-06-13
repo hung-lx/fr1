@@ -1,0 +1,142 @@
+/* start PC css settings
+------------------------- */
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#intro {
+    background: url(../img/intro_bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+/* ===========================================================
+intro
+=========================================================== */
+
+#content {
+    text-align: left;
+    margin-top: 70px;
+    margin-bottom: 125px;
+}
+
+#content .contentHead .tiTleBg01 {
+    background: url(../img/titlebg01.jpg) center center no-repeat;
+}
+
+#content .contentHead .tiTleBg02 {
+    background: url(../img/titlebg02.jpg) center center no-repeat;
+}
+
+#content .contentHead .tiTle01 {
+    background-size: cover;
+    padding: 55px 45px;
+    color: #000050;
+}
+
+#content .contentHead .tiTle01 h2 {
+    font-size: 32px;
+    line-height: 1.6;
+    letter-spacing: 5px;
+}
+
+#content .contentHead .tiTle02 {
+    color: #fff;
+    padding: 12px 15px 12px 30px;
+    background-color: #000050;
+    font-size: 16px;
+}
+
+#content .tiTle03 {
+    color: #000050;
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    letter-spacing: 3px;
+}
+
+#content .contentHead .tiTle02 .txt01 {
+    margin: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#content .contentImg >img {
+    float: left;
+    margin-right: 60px;
+}
+
+.contentMain {
+    margin-top: 50px;
+    margin-bottom: 78px;
+}
+
+#content .contentImg {
+    margin-top: 66px;
+}
+
+
+/* start SP css settings
+------------------------- */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #intro {
+        background: url(../img/intro_bg_sp.jpg) center center no-repeat;
+    }
+    /* ===========================================================
+    intro
+    =========================================================== */
+    #content {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .contentMain {
+        margin-top: 20px;
+        margin-bottom: 35px;
+    }
+    #content .tiTle03 {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    #content .contentImg {
+        margin-top: 16px;
+    }
+    #content .containerHead {
+        padding: 0;
+    }
+    #content .contentHead .tiTle01 h2 {
+        font-size: 15px;
+    }
+    #content .contentHead .tiTleBg01 {
+        background: url(../img/titlebg01_sp.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    #content .contentHead .tiTleBg02 {
+        background: url(../img/titlebg02_sp.jpg) center center no-repeat;
+        background-size: cover;
+    }
+    #content .contentHead .tiTle01 {
+        padding: 36px 20px;
+    }
+    #content .contentImg >img {
+        margin: 0 0 19px;
+        float: none;
+        width: 100%;
+    }
+    .tiTle02.hide {
+        background: url(../../common/img/arrow_bottom.png) no-repeat;
+        background-position: right 15px center;
+    }
+    #content .contentHead .tiTle02 {
+        font-size: 10px;
+    }
+    #content .contentHead .tiTle02 .txt01 {
+        font-size: 14px;
+    }
+}

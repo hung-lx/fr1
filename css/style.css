@@ -1,0 +1,366 @@
+/* start PC css settings
+------------------------- */
+
+
+/* ===========================================================
+slide
+=========================================================== */
+
+#mainSlide {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.mainSlideIn {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flexslider {
+    text-align: center;
+}
+
+.slides {
+    overflow: hidden;
+    position: relative;
+}
+
+.slides li {
+    position: relative;
+}
+
+.slidesContent {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 999999;
+}
+
+.imgMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+}
+
+.imgMain .slidesImg {
+    width: 100% !important;
+    height: auto;
+    display: block !important;
+}
+
+.imgMain .slidesText {
+    color: #fff;
+    font-size: 46px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.imgMain .flex-viewport {
+    width: 100% !important;
+    overflow: hidden !important;
+    margin: 0 auto;
+}
+
+
+/* ===========================================================
+ImgISpec
+=========================================================== */
+
+.ImgISpec {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    z-index: -1;
+}
+
+
+/* ===========================================================
+price
+=========================================================== */
+
+#price .container {
+    padding: 86px 0 55px;
+}
+
+.priceListIt {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.priceListIt:hover .olay {
+    background-color: rgba(0, 0, 80, 0);
+}
+
+.priceListIt .ct h3 span {
+    border-bottom: 3px solid transparent;
+}
+
+.priceListIt .ct p span {
+    border-bottom: 1px solid transparent;
+}
+
+.priceListIt:hover .ct h3 span {
+    border-bottom: 3px solid #fff;
+}
+
+.priceListIt:hover .ct p span {
+    border-bottom: 1px solid #fff;
+}
+
+.priceListIt:nth-child(3n) {
+    margin-right: 0;
+}
+
+.priceListIt:hover .ct h3 span {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.priceListIt:hover .ct p span {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.priceListIt .olay {
+    background-color: rgba(0, 0, 80, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.priceListIt .ct {
+    z-index: 9999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.priceListIt .ct h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.priceListIt .ct p {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.priceListIt .img {
+    width: 100% !important;
+    height: auto !important;
+}
+
+.priceTt {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.priceTt h2 {
+    font-size: 42px;
+    color: #000050;
+    margin-bottom: 70px;
+    letter-spacing: 10px;
+    font-weight: normal;
+}
+
+.priceText {
+    margin-bottom: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 2.6;
+    color: #323232;
+    letter-spacing: 3px;
+}
+
+
+/* ===========================================================
+news
+=========================================================== */
+
+#news .container {
+    padding: 63px 0 50px;
+}
+
+.newsTt h2 {
+    font-size: 36px;
+    color: #000050;
+    margin-bottom: 54px;
+    text-align: left;
+    font-weight: normal;
+    letter-spacing: 10px;
+}
+
+#news .text {
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+#news .text:last-child {
+    margin-bottom: 0;
+}
+
+.newsCt .txt01 {
+    display: table-cell;
+    width: 108px;
+    text-align: left;
+    color: #000050;
+}
+
+.newsCt .txt02 {
+    display: table-cell;
+    width: 852px;
+    text-align: left;
+}
+
+.newsSeemore {
+    text-align: right;
+}
+
+
+/* ===========================================================
+imgCover
+=========================================================== */
+
+.imgCover img {
+    display: block;
+    height: auto;
+    width: 100% !important;
+}
+
+
+/* start SP css settings
+------------------------- */
+
+@media screen and (max-width: 640px) {
+    /* ===========================================================
+    slide
+    =========================================================== */
+    .imgMain .slidesImg {
+        height: calc(100vh - 80px) !important;
+    }
+    #mainSlide {
+        height: calc(100vh - 80px) !important;
+        margin-top: 80px !important;
+    }
+    .slidesContent {
+        width: 100%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .imgMain .slidesText {
+        margin-bottom: 0;
+    }
+    .imgMain .slidesText img {
+        width: 80%;
+    }
+    /* ===========================================================
+    price
+    =========================================================== */
+    #price {
+        background: url(../img/square.png) left top no-repeat;
+        padding-bottom: 0;
+    }
+    .priceTt h2 {
+        font-size: 18px;
+        margin-bottom: 26px;
+        letter-spacing: 5px;
+    }
+    #price .container {
+        padding-bottom: 0;
+        padding-top: 39px;
+    }
+    .priceListIt {
+        width: 50%;
+        margin: 0;
+        height: auto;
+    }
+    .priceText {
+        margin-bottom: 33px;
+        letter-spacing: 0;
+        font-size: 12px;
+    }
+    .priceListIt .ct h3 {
+        font-size: 17px;
+        margin-bottom: 10px;
+        letter-spacing: 5px;
+        line-height: 17px;
+    }
+    .priceListIt .ct p {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .priceListIt:nth-child(2n) {
+        border-bottom: 1px solid #000050;
+        border-left: 1px solid #000050;
+        box-sizing: border-box;
+    }
+    .priceListIt:nth-child(2n+1) {
+        border-bottom: 1px solid #000050;
+        width: calc(50% - 1px);
+        box-sizing: border-box;
+    }
+    .priceListIt:last-child {
+        border-bottom: none;
+    }
+    .priceListIt:nth-last-child(2) {
+        border-bottom: none;
+    }
+    /* ===========================================================
+    news
+    =========================================================== */
+    #news {
+        background: url(../../img/square.png) left top no-repeat;
+    }
+    #news .container {
+        padding: 30px 10px 23px;
+    }
+    .newsTt h2 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #news .text {
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    .newsCt .txt01,
+    .newsCt .txt02 {
+        display: block;
+        width: 100%;
+    }
+    /* ===========================================================
+    newsSeemore
+    =========================================================== */
+    .newsSeemore {
+        margin-top: 10px;
+    }
+    .newsSeemore img {
+        max-width: 90px;
+    }
+}
